@@ -13,7 +13,7 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: Run Lint
-        run: eslint --ext .jsx --fix src
+        run: ./node_modules/.bin/eslint --ext .jsx --fix src
       - name: Run tests
         run: npm test
   build:
